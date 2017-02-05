@@ -1,0 +1,133 @@
+.contact
+{
+    padding-top: 100px;
+
+    text-align: center;
+}
+.contact--container
+{
+    max-width: 780px;
+}
+.contact--title
+{
+    font-family: $open-sans-light;
+    font-size: 2.75em;
+    font-weight: 300;
+
+    position: relative;
+
+    margin-bottom: 41px;
+
+    text-transform: uppercase;
+
+    color: $gray-color;
+    &::before
+    {
+        position: absolute;
+        bottom: 10px;
+        left: calc(50% - 49px);
+
+        display: block;
+
+        width: 98px;
+        height: 4px;
+
+        content: '';
+
+        background-color: $orange-color;
+    }
+    &::after
+    {
+        display: block;
+
+        width: 66px;
+        height: 4px;
+        margin: 45px auto 0 auto;
+
+        content: '';
+
+        background-color: rgba($orange-color, 0.7);
+    }
+}
+
+.contact--text-semi-bold
+{
+    font-family: $open-sans-semi-bold;
+    font-weight: 600;
+}
+
+.contact--text
+{
+    font-family: $open-sans-italic;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 24px;
+
+    margin-bottom: 106px;
+
+    color: $light-color;
+}
+.contact--form
+{
+    margin-bottom: 195px;
+}
+.contact--grid
+{
+    margin-bottom: 30px;
+
+    text-align: left;
+}
+
+.contact--label
+{
+    font-family: $open-sans-reg;
+    font-size: .875rem;
+    font-weight: 400;
+
+    margin-bottom: 10px;
+
+    color: #636363;
+}
+
+.contact--input,
+.contact--massage{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    &:focus{
+        border-color: $orange-color ;
+        outline: none;
+    }
+}
+
+.contact--massage{
+    height: 165px;
+}
+
+.contact--button
+{
+    float: right;
+
+    width: 165px;
+    margin-top: 10px;
+
+    background-color: $orange-color;
+    &:focus,
+    &:hover{
+        background-color: rgba($orange-color, 0.7);
+
+    }
+}
+
+.contact--text-button
+{
+    font-family: $open-sans-semi-bold;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 40px;
+
+    margin: 0 auto;
+
+    text-transform: uppercase;
+
+    color: $white-color;
+}

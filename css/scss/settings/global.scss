@@ -1,0 +1,23 @@
+.slick-dots{
+  font-size: 0;
+ & button{
+  width: 9px;
+  height: 9px;
+  border: none;
+  background-color: #ffffff;
+ } 
+}
+
+.slick-dots li{
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    margin-right: 13px;
+    &:last-child{
+      margin-right: 0;
+    }
+}
+
+.slick-active button{
+  background-color: $orange-color;
+}

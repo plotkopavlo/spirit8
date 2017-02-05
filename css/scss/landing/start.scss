@@ -1,0 +1,67 @@
+.start{
+	height: 87.97vh;
+	padding-top: 25.57vh;
+
+}
+
+.start--text{
+	
+	text-align: center;
+	color: #999999;
+}
+
+.start--title{
+	margin-bottom: 2.53vh;
+	font-family: $open-sans-light;
+	font-weight: 300;
+
+	text-transform: uppercase;
+	font-size: 2.75rem;
+}
+
+.start--text-speccolor{
+	color: $orange-color;
+	font-family: $open-sans-bold;
+}
+
+.start--slogan{
+	margin-bottom: 35.44vh;
+	font-family: $open-sans-reg;
+	font-weight: 400;
+	font-size: 1.25rem;
+	color: rgba($white-color, 0.75);
+}
+
+.start--text-bold{
+	font-family: $open-sans-bold;
+	font-weight: 700;
+
+}
+
+.start--button{
+	height: 50px;
+	width: 50px;
+	padding: 0;
+	margin: 0 auto;
+	&:hover .start--button-container,
+	&:focus .start--button-container{
+		border-color: $orange-color ;
+	}
+
+}
+
+.start--button-container{
+	position: relative;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 2px solid #ffffff;
+
+}
+
+.start--icon{
+	position: absolute;
+	left: calc(50% - 5.5px);
+	top: calc(50% - 6px);
+
+}

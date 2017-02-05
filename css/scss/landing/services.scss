@@ -1,0 +1,97 @@
+.services{
+
+	padding-top: 100px;
+	text-align: center;
+}
+
+.services--title{
+	
+	position: relative;
+	margin-bottom: 41px;
+
+	font-family: $open-sans-light;
+	font-weight: 300;
+	font-size: 2.75rrem;	
+	color: $gray-color;
+	text-transform: uppercase;
+	
+	&::before{
+
+		content: "";
+		position: absolute;
+		bottom: 10px;
+		left: calc(50% - 49px);
+		display: block;
+		width: 98px;
+		height: 4px;
+		background-color: $orange-color;
+	}
+	&::after{
+
+		content: "";
+		display: block;
+		width: 66px;
+		height: 4px;
+		margin: 45px auto 0 auto;
+		background-color: rgba($orange-color, 0.7);
+	}
+}
+.services--text-semi-bold{
+	
+	font-family: $open-sans-semi-bold;
+	font-weight: 600;
+}
+.services--text{
+
+	margin-bottom: 106px;
+	font-family: $open-sans-italic;
+	font-weight: 400;
+	font-size: 1rrem;
+	color: $light-color;
+	line-height: 24px;
+}
+
+.services--features{
+	margin-bottom: 101px;
+}
+
+.services--list{
+
+}
+
+.services--item{
+	
+	max-width: 292px;
+	color: $gray-color;
+}
+
+.services--icon{
+	display: flex;
+	width: 125px;
+	height: 125px;
+	margin: 0 auto 29px auto;
+	border-radius: 50%;
+	border: 5px solid $orange-color ;
+	text-align: center;
+}
+
+.services--img{
+	margin: auto;
+}
+
+.services--caption{
+	margin-bottom: 20px;
+	font-family: $open-sans-semi-bold;
+	font-weight: 600;
+	font-size: 1.563rem;
+	text-transform: uppercase;
+}
+
+.services--desc{
+	
+	font-family: $open-sans-reg;
+	font-weight: 400;
+	font-size: 0.875rem;
+	text-align: center;
+	line-height: 21px;
+}

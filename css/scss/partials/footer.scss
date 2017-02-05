@@ -1,0 +1,67 @@
+.footer
+{
+    height: 92px;
+    padding-top: 31px;
+
+    background-color: $gray-color;
+}
+.footer--container
+{
+    max-width: 1170px;
+}
+.footer--copy
+{
+    font-family: $open-sans-reg;
+    font-size: .75rem;
+    font-weight: 400;
+
+    float: left;
+
+    margin-top: 12px;
+
+    color: #b2b2b2;
+}
+
+.footer--text-bold
+{
+    font-family: $open-sans-bold;
+    font-weight: 700;
+}
+
+.footer--icon
+{
+    float: right;
+}
+
+.footer--list
+{
+    font-size: 0;
+}
+
+.footer--item
+{
+    display: inline-block;
+
+    margin-right: 14px;
+    &:last-child
+    {
+        margin-right: 0;
+    }
+}
+
+.footer--link
+{
+    display: block;
+    overflow: hidden;
+
+    width: 31px;
+    height: 31px;
+}
+
+.footer--img
+{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}

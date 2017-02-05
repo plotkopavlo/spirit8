@@ -1,0 +1,104 @@
+.team{
+	
+	padding-top: 100px;
+	background-color: #000000;
+	text-align: center;
+}
+
+.team--title{
+
+	position: relative;
+	margin-bottom: 93px;
+	font-family: $open-sans-light;
+	font-weight: 300;
+	font-size: 2.75rem;	
+	color: $white-color;
+	text-transform: uppercase;
+	
+	&::before{
+
+		content: "";
+		position: absolute;
+		bottom: 10px;
+		left: calc(50% - 49px);
+		display: block;
+		width: 98px;
+		height: 4px;
+		background-color: $orange-color;
+	}
+	&::after{
+
+		content: "";
+		display: block;
+		width: 66px;
+		height: 4px;
+		margin: 45px auto 0 auto;
+		background-color: rgba($orange-color, 0.7);
+	}
+}
+.team--text-semi-bold{
+
+	font-family: $open-sans-semi-bold;
+	font-weight: 600;
+}
+.team--slider{
+
+	margin: 0 auto 84px auto;
+}
+
+.team--list{
+}
+
+.team--list .slick-list{
+
+	margin-bottom: 74px;
+}
+
+.team--person{
+
+	max-width: 293px;
+	font-family: $open-sans-reg;
+	font-weight: 400;
+	color: $white-color;
+
+
+}
+
+.team--foto{
+
+	width: 127px;
+	height: 127px;
+	margin: 0 auto 22px auto;
+	background-color: #d7d7d7;
+	border-radius: 50%;
+	overflow: hidden;
+
+}
+
+.team--image{
+	
+	width: 100%;
+	height: 100%;
+	object-fit:cover;
+}
+
+.team--name{
+
+	font-family: $open-sans-bold;
+	font-weight: 700;
+	font-size: 1.25rem;
+	line-height: 24px;
+}
+
+.team--slogan{
+	margin-bottom: 35px;
+	font-size: 1rem;
+	line-height: 24px;
+
+}
+
+.team--text{
+
+	font-size: 0.875rem;
+	line-height: 24px;
+}
