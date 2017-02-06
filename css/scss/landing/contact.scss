@@ -89,17 +89,24 @@
     color: #636363;
 }
 
+.contact--required
+{
+
+    color: #db0000;
+}
+
 .contact--input,
-.contact--massage{
+.contact--massage
+{
     width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.4);
     &:focus{
-        border-color: $orange-color ;
-        outline: none;
+        outline: $orange-color auto 5px ;
     }
 }
 
-.contact--massage{
+.contact--massage
+{
     height: 165px;
 }
 

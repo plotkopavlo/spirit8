@@ -101,95 +101,120 @@
 }
 .works--button
 {
+  font-family: $open-sans-italic;
+  font-size: 1.125rem;
+  font-weight: 400;
+
+  padding-left: 15px;
+
+  color: $light-color;
+  &::after
+  {
     font-family: $open-sans-italic;
     font-size: 1.125rem;
     font-weight: 400;
 
-    padding-left: 15px;
+    display: inline-block;
 
-    color: $light-color;
-    &::after
-    {
-        font-family: $open-sans-italic;
-        font-size: 1.125rem;
-        font-weight: 400;
-
-        display: inline-block;
-
-        content: '|';
-    }
-}
-
-.works--button--active
-{
+    content: '|';
+  }
+  &:hover,
+  &:focus
+  {
     font-family: $open-sans-semi-bold;
     font-weight: 600;
 
     color: $gray-color;
+  }
+}
+
+.works--button--active
+{
+  font-family: $open-sans-semi-bold;
+  font-weight: 600;
+
+  color: $gray-color;
 }
 
 
 
 .works--item
 {
-    overflow: hidden;
+  overflow: hidden;
 
-    max-width: 292px;
-    height: 237px;
-    margin-bottom: 31px;
+  max-width: 292px;
+  height: 237px;
+  margin-bottom: 31px;
+  &:hover,
+  &:focus
+  {
+    .works--image
+    {
+      display:none;
+    }
+    .works--item--hover
+    {
+     display: block;
+        }
+    }
 }
 
 .works--image
 {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    object-fit: cover;
+  object-fit: cover;
 }
 
 .works--item--hover
 {
-    font-family: $open-sans-semi-bold;
-    font-weight: 600;
-    line-height: 24px;
+  font-family: $open-sans-semi-bold;
+  font-weight: 600;
+  line-height: 24px;
 
-    display: none;
+  display: none;
 
-    width: 100%;
-    height: 100%;
-    padding-top: 66px;
+  width: 100%;
+  height: 100%;
+  padding-top: 66px;
 
-    background-color: $gray-color;
+  background-color: $gray-color;
 }
 
 .works--name
 {
-    font-size: 1.25rem;
-    line-height: 24px;
+  font-size: 1.25rem;
+  line-height: 24px;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 
-    color: $white-color;
+  color: $white-color;
 }
 
 .works--type
 {
-    font-size: .875rem;
-    line-height: 24px;
+  margin-bottom: 28px;
+  font-size: .875rem;
+  line-height: 24px;
 
-    color: $light-color;
+  color: $light-color;
 }
 
 .works--icon
 {
-    overflow: hidden;
+  overflow: hidden;
 
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
+
+  margin: 0 auto;
 }
 
 .works--icon-plus
 {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
 }
