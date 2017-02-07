@@ -3,6 +3,7 @@
 }
 .about--container {
   background: url(../img/about--background.jpg) 15px 0 no-repeat;
+  background-size: calc(100% - 406px)
 }
 .about--grid {
   float: right;
@@ -45,7 +46,6 @@
 
 
 .about--text {
-  float: right;
   max-width: 403px;
   margin-bottom: 45px;
 
@@ -140,4 +140,14 @@
   text-align: left;
   color: #616161;
   text-transform: uppercase;
+}
+@media (max-width: $bootstrap-size-md) {
+	.about--container{
+    background: none
+	}
+	.about--grid{
+		float: none;
+		margin-right: auto;
+		margin-left: auto;
+	}
 }

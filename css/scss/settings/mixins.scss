@@ -4,10 +4,20 @@
   left: 50%;
   width: $width;
 }
+@mixin after-title{
 
+
+}
 $bootstrap-xs: "(max-width:767px)";
 $bootstrap-sm: "(min-width:768px)";
 $bootstrap-md: "(min-width:992px)";
 $bootstrap-lg: "(min-width:1200px)";
 $bootstrap-xl: "(min-width:1400px)";
 $bootstrap-xxl: "(min-width: 1700px)";
+
+$bootstrap-size-xs: 767px;
+$bootstrap-size-sm: 768px;
+$bootstrap-size-md: 992px;
+$bootstrap-size-lg: 1200px;
+$bootstrap-size-xl: 1400px;
+$bootstrap-size-xxl:  1700px;
