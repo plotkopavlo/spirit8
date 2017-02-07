@@ -8,7 +8,6 @@
 .portfolio--title
 {
     font-family: $open-sans-light;
-    font-size: 1.25em;
     font-weight: 300;
 
     position: relative;
@@ -45,6 +44,9 @@
 
         background-color: rgba($orange-color, .7);
     }
+
+  @include locks-front-size(1.75, 2.125);
+
 }
 .portfolio--text-semi-bold
 {
@@ -190,6 +192,8 @@
   text-transform: uppercase;
 
   color: $white-color;
+  @include locks-front-size(1.03, 1.25);
+
 }
 
 .works--type

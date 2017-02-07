@@ -17,17 +17,18 @@
   font-family: $open-sans-reg;
   color: #636363;
   text-transform: uppercase;
+
+  @include locks-front-size(1.03, 1.25);
 }
 
 .about--title {
   margin-bottom: 31px;
 
   font-weight: 400;
-  font-size: 2.125em;
   font-family: $open-sans-reg;
   color: $gray-color;
   text-transform: uppercase;
-  *	&::after{
+  &::after{
 		display: block;
 
 		width: 98px;
@@ -38,6 +39,7 @@
 
 		background-color: $orange-color;
 	}
+  @include locks-front-size(1.75, 2.125);
 }
 .about--text-bold {
   font-weight: 700;
@@ -87,6 +89,7 @@
   font-weight: 600;
   font-size: 1.125em;
   font-family: $open-sans-semi-bold;
+
 }
 
 .about--text-italic {
@@ -151,3 +154,4 @@
 		margin-left: auto;
 	}
 }
+

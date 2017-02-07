@@ -11,7 +11,6 @@
 	margin-bottom: 93px;
 	font-family: $open-sans-light;
 	font-weight: 300;
-	font-size: 2rem;	
 	color: $white-color;
 	text-transform: uppercase;
 	
@@ -35,6 +34,9 @@
 		margin: 45px auto 0 auto;
 		background-color: rgba($orange-color, 0.7);
 	}
+
+  @include locks-front-size(1.75, 2.125);
+
 }
 .team--text-semi-bold{
 
@@ -88,6 +90,8 @@
 	font-weight: 700;
 	font-size: 1.25rem;
 	line-height: 24px;
+  @include locks-front-size(1.03, 1.25);
+
 }
 
 .team--slogan{

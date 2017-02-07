@@ -16,7 +16,9 @@
 	font-weight: 300;
 
 	text-transform: uppercase;
-	font-size: 2.75rem;
+	//font-size: 2.75rem;
+
+	@include locks-front-size(2, 2.75);
 }
 
 .start--text-speccolor{
@@ -28,8 +30,10 @@
 	margin-bottom: 35.44vh;
 	font-family: $open-sans-reg;
 	font-weight: 400;
-	font-size: 1.25rem;
+	//font-size: 1.25rem;
 	color: rgba($white-color, 0.75);
+
+	@include locks-front-size(1.03, 1.25);
 }
 
 .start--text-bold{

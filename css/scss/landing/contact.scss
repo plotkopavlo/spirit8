@@ -59,7 +59,7 @@
 .contact--text
 {
     font-family: $open-sans-italic;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
 
@@ -138,3 +138,25 @@
 
     color: $white-color;
 }
+
+@media (max-width:320px)
+    {
+        .contact--title
+        {
+            font-size:1.75rem;
+        }
+    }
+    @media (min-width:320px)
+    {
+        .contact--title
+        {
+            font-size:calc(1.75rem + ((2.125 - 1.75 )*16)*(100vw - 320px)/ (992 - 320));
+        }
+    }
+    @media (min-width:992px)
+    {
+        .contact--title
+        {
+            font-size:2.125rem;
+        }
+    }
