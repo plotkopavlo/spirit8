@@ -1,13 +1,15 @@
 .footer
 {
     height: 92px;
-    padding-top: 31px;
+    padding-top: 30px;
 
     background-color: $gray-color;
 }
 .footer--container
 {
-    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .footer--copy
 {
@@ -17,7 +19,6 @@
 
     float: left;
 
-    margin-top: 12px;
 
     color: #b2b2b2;
 }
@@ -64,4 +65,12 @@
     height: 100%;
 
     object-fit: cover;
+}
+@media #{$bootstrap-xs}{
+    .footer--container{
+        flex-direction: column-reverse;
+    }
+    .footer--icon{
+        margin-bottom: 15px
+    }
 }

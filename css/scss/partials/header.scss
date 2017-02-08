@@ -9,6 +9,8 @@
 }
 
 .header--logo-text {
+	font-family: $lato-bold;
+  font-weight: 700;
 	font-size: 1.5rem;
 	line-height: 24px;
 	color: $white-color;
@@ -28,12 +30,14 @@
 	&:last-child .nav--link{
 		padding-right: 0;
 	}
-
+}
 	.nav--link {
 		display: block;
 
 		padding: 0 10px 20px 10px;
-
+		
+		font-family: $lato-bold;
+  	font-weight: 700;
 		font-size: 0.875rem;
 		line-height: 24px;
 		color: $white-color;
@@ -61,4 +65,4 @@
 		}
 	}
 
-}
+

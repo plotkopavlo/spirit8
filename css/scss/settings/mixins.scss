@@ -1,8 +1,32 @@
 @mixin logo-centered($width) {
-  position: absolute;
-  margin-left: - ($width / 2);
-  left: 50%;
-  width: $width;
+	position: absolute;
+	margin-left: - ($width / 2);
+	left: 50%;
+	width: $width;
+}
+
+@mixin locks-front-size ($min-value, $max-value){
+	@media (max-width:320px)
+	{
+		&
+		{
+			font-size:#{$min-value}rem;
+		}
+	}
+	@media (min-width:320px)
+	{
+		&
+		{
+			font-size:calc(#{$min-value}rem + ((#{$max-value} - #{$min-value}) * 16 ) * (100vw - 320px) / 672 );
+		}
+	}
+	@media (min-width:992px)
+	{
+		&
+		{
+			font-size:#{$max-value}rem;
+		}
+	}
 }
 
 $bootstrap-xs: "(max-width:767px)";
@@ -11,3 +35,14 @@ $bootstrap-md: "(min-width:992px)";
 $bootstrap-lg: "(min-width:1200px)";
 $bootstrap-xl: "(min-width:1400px)";
 $bootstrap-xxl: "(min-width: 1700px)";
+
+$bootstrap-size-xs: 767px;
+$bootstrap-size-sm: 768px;
+$bootstrap-size-md: 992px;
+$bootstrap-size-lg: 1200px;
+$bootstrap-size-xl: 1400px;
+$bootstrap-size-xxl:  1700px;
+@media (max-width:320px){.banner{font-size:3.45rem}}@media (min-width:320px){.banner
+	{
+		font-size:calc(3.45rem + ((8 - 3.45)*16)*(100vw - 320px)/(848 - 320))}
+		}@media (min-width:848px){.banner{font-size:8rem}}

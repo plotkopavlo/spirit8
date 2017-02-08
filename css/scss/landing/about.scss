@@ -3,6 +3,7 @@
 }
 .about--container {
   background: url(../img/about--background.jpg) 15px 0 no-repeat;
+  background-size: calc(100% - 406px)
 }
 .about--grid {
   float: right;
@@ -22,11 +23,10 @@
   margin-bottom: 31px;
 
   font-weight: 400;
-  font-size: 2.125em;
   font-family: $open-sans-reg;
   color: $gray-color;
   text-transform: uppercase;
-  *	&::after{
+  &::after{
 		display: block;
 
 		width: 98px;
@@ -37,6 +37,7 @@
 
 		background-color: $orange-color;
 	}
+  @include locks-front-size(1.35, 2.125);
 }
 .about--text-bold {
   font-weight: 700;
@@ -45,7 +46,6 @@
 
 
 .about--text {
-  float: right;
   max-width: 403px;
   margin-bottom: 45px;
 
@@ -54,6 +54,7 @@
   line-height: 25px;
   font-family: $open-sans-reg;
   color: $light-color;
+
 }
 
 .about--list {
@@ -87,6 +88,7 @@
   font-weight: 600;
   font-size: 1.125em;
   font-family: $open-sans-semi-bold;
+
 }
 
 .about--text-italic {
@@ -141,3 +143,14 @@
   color: #616161;
   text-transform: uppercase;
 }
+@media (max-width: $bootstrap-size-md) {
+	.about--container{
+    background: none
+	}
+	.about--grid{
+		float: none;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
