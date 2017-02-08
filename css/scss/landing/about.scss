@@ -17,8 +17,6 @@
   font-family: $open-sans-reg;
   color: #636363;
   text-transform: uppercase;
-
-  @include locks-front-size(1.03, 1.25);
 }
 
 .about--title {
@@ -39,7 +37,7 @@
 
 		background-color: $orange-color;
 	}
-  @include locks-front-size(1.75, 2.125);
+  @include locks-front-size(1.35, 2.125);
 }
 .about--text-bold {
   font-weight: 700;
@@ -56,6 +54,7 @@
   line-height: 25px;
   font-family: $open-sans-reg;
   color: $light-color;
+
 }
 
 .about--list {

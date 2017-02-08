@@ -34,7 +34,7 @@
 		margin: 45px auto 0 auto;
 		background-color: rgba($orange-color, 0.7);
 	}
-  @include locks-front-size(1.75, 2.125);
+  @include locks-front-size(1.75, 2.75);
 
 
 }
@@ -90,8 +90,7 @@
 	font-family: $open-sans-semi-bold;
 	font-weight: 600;
 	text-transform: uppercase;
-
-  @include locks-front-size(1.29, 1.563 );
+	font-size: 1.563rem;
 
 }
 

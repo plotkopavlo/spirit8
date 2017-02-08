@@ -35,7 +35,7 @@
 		background-color: rgba($orange-color, 0.7);
 	}
 
-  @include locks-front-size(1.75, 2.125);
+  @include locks-front-size(1.75, 2.75);
 
 }
 .team--text-semi-bold{
@@ -90,8 +90,6 @@
 	font-weight: 700;
 	font-size: 1.25rem;
 	line-height: 24px;
-  @include locks-front-size(1.03, 1.25);
-
 }
 
 .team--slogan{
