@@ -10,7 +10,7 @@
 
 .header--logo-text {
 	font-family: $lato-bold;
-  font-weight: 700;
+	font-weight: 700;
 	font-size: 1.5rem;
 	line-height: 24px;
 	color: $white-color;
@@ -31,38 +31,38 @@
 		padding-right: 0;
 	}
 }
-	.nav--link {
-		display: block;
+.nav--link {
+	display: block;
 
-		padding: 0 10px 20px 10px;
-		
-		font-family: $lato-bold;
-  	font-weight: 700;
-		font-size: 0.875rem;
-		line-height: 24px;
-		color: $white-color;
-		text-transform: uppercase;
+	padding: 0 10px 20px 10px;
+	
+	font-family: $lato-bold;
+	font-weight: 700;
+	font-size: 0.875rem;
+	line-height: 24px;
+	color: $white-color;
+	text-transform: uppercase;
 
-		&:hover,
-		&:focus{
-			color: $white-color ;
-			text-decoration: none;
-			outline: none;
-			&::after{
-				display: block;
-			}
-		}
+	&:hover,
+	&:focus{
+		color: $white-color ;
+		text-decoration: none;
+		outline: none;
 		&::after{
-			position: absolute;
-			top: calc(100% - 3px);
-			right: 0;
-			left: 0;
-			display: none;
-			height: 3px ;
-			content: '';
-			background-color: $orange-color;
-			background: linear-gradient(to right, rgba($white-color, 0.1) 50%, $orange-color 50%);
+			display: block;
 		}
 	}
+	&::after{
+		position: absolute;
+		top: calc(100% - 3px);
+		right: 0;
+		left: 0;
+		display: none;
+		height: 3px ;
+		content: '';
+		background-color: $orange-color;
+		background: linear-gradient(to right, rgba($white-color, 0.1) 50%, $orange-color 50%);
+	}
+}
 
 

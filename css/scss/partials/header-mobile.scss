@@ -10,17 +10,6 @@ ul{
   right: 0;
 }
 
-.menu-btn {
-  border-radius: 5px;
-  border: 2px solid #ffffff;
-  background-color: rgba(60, 170, 210, 0);
-  box-shadow: 1px 3px 1px 0px rgba(0, 0, 0, 0.2);
-  width: 38px;
-  height: 40px;
-  padding: 7px 6px;
-  cursor: pointer;
-  color: #ffffff;
-}
 .close-block {
   height: 85px;
 }
@@ -34,8 +23,8 @@ ul{
   background: transparent;
   color: #FFF;
 }
-.nav-text-mobile {
-  font-family: $ubuntu-medium-font, "sans-serif";
+.nav-mobile--item{  font-family: $lato-bold;
+  
   font-size: 0.938em;
   font-weight: 500;
   line-height: 30px;
@@ -49,7 +38,8 @@ ul{
   box-shadow: 1px 3px 1px 0px rgba(0, 0, 0, 0.2);
   width: 184px;
   height: 52px;
-  font-family: $ubuntu-medium-font, "sans-serif";
+ font-family: $lato-bold;
+  
   color: #ffffff;
   font-size: 0.938em;;
   font-weight: 500;
@@ -66,7 +56,8 @@ ul{
   box-shadow: 1px 3px 1px 0px rgba(0, 0, 0, 0.2);
   width: 200px;
   height: 32px;
-  font-family: $ubuntu-medium-font, "sans-serif";
+ font-family: $lato-bold;
+  
   color:  #ffffff;
   font-size: 15px;
   font-weight: 500;
@@ -92,7 +83,8 @@ ul{
   box-shadow: 1px 3px 1px 0px rgba(0, 0, 0, 0.2);
   width: 104px;
   height: 32px;
-  font-family: $ubuntu-medium-font, "sans-serif";
+ font-family: $lato-bold;
+  
   color: #ffffff;
   font-size: 0.938em;
   font-weight: 500;
@@ -105,35 +97,6 @@ ul{
   margin-top: 25px;
   .sing-in-icon {
     margin: 0 10px;
-  }
-}
-.btn-drop-mobile {
-  border-radius: 5px;
-  border: 1px solid #e5e5e5;
-  box-sizing: border-box;
-  background-color:  #ffffff;
-  box-shadow: 1px 3px 1px 0px rgba(0, 0, 0, 0.05);
-  width: 200px;
-  height: 30px;
-  font-family: $ubuntu-regular-font, "sans-serif";
-  color:  #3e4041;
-  font-size: 0.938em;
-  font-weight: 400;
-  line-height: 30px;
-  text-align: left;
-  padding: 0 10px;
-  margin-left: 25px !important;
-  margin-top: 25px;
-  position: relative;
-  z-index: 2;
-  .user-icon {
-    float: left;
-    margin-right: 5px;
-    line-height: 28px;
-  }
-  .sort-icon {
-    float: right;
-    line-height: 24px;
   }
 }
 
@@ -154,7 +117,7 @@ ul{
   -webkit-overflow-scrolling: touch;
 }
 
-.pushy a {
+.nav-mobile--link {
   display: block;
   color: #fff;
   padding:  0 30px;
@@ -162,32 +125,8 @@ ul{
   text-align: right;
 }
 
-.drop-menu {
-  position: relative;
-  margin-left: 25px;
-  margin-top: -5px;
-  z-index: 1;
-  border-radius: 0 0 5px 5px;
-  width: 202px;
-  background-color: #ffffff;
-  a {
-    text-align: left;
-  }
-  >li>a {
-    padding: 3px 10px;
-  }
-  .hr-nav {
-    background-color:  #e5e5e5;
-    height: 1px;
-    margin: 0;
-  }
-  .angle-icon {
-    margin-right: 10px;
-  }
-}
-
-.pushy a:hover{
-  color: #FFF;
+.pushy a.nav-mobile--link:hover,.pushy .nav-mobile--link:focus{
+  color: $orange-color;
 }
 
 .pushy-left{
