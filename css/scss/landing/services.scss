@@ -34,7 +34,7 @@
 		margin: 45px auto 0 auto;
 		background-color: rgba($orange-color, 0.7);
 	}
-  @include locks-front-size(1.75, 2.75);
+	@include locks-front-size(1.75, 2.75);
 
 
 }
@@ -62,9 +62,13 @@
 }
 
 .services--item{
-	
-	max-width: 292px;
+	margin-bottom: 15px;
 	color: $gray-color;
+}
+
+.services--container{
+	max-width: 292px;
+	margin: 0 auto;
 }
 
 .services--icon{

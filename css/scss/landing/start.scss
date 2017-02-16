@@ -8,6 +8,8 @@
 	
 	text-align: center;
 	color: #999999;
+	margin-bottom: 35.44vh;
+	
 }
 
 .start--title{
@@ -27,10 +29,8 @@
 }
 
 .start--slogan{
-	margin-bottom: 35.44vh;
 	font-family: $open-sans-reg;
 	font-weight: 400;
-	//font-size: 1.25rem;
 	color: rgba($white-color, 0.75);
 
 	@include locks-front-size(1.03, 1.25);

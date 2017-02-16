@@ -45,7 +45,7 @@
         background-color: rgba($orange-color, .7);
     }
 
-  @include locks-front-size(1.75, 2.75);
+    @include locks-front-size(1.75, 2.75);
 
 }
 .portfolio--text-semi-bold
@@ -119,15 +119,15 @@
     display: inline-block;
 
     content: '|';
-  }
-  &:hover,
-  &:focus
-  {
+}
+&:hover,
+&:focus
+{
     font-family: $open-sans-semi-bold;
     font-weight: 600;
 
     color: $gray-color;
-  }
+}
 }
 
 .works--button--active
@@ -144,7 +144,7 @@
 {
   overflow: hidden;
 
-  max-width: 292px;
+
   height: 237px;
   margin-bottom: 31px;
   &:hover,
@@ -153,14 +153,20 @@
     .works--image
     {
       display:none;
-    }
-    .works--item--hover
-    {
-     display: block;
-        }
-    }
+  }
+  .works--item--hover
+  {
+   display: block;
+}
+}
 }
 
+.works--container{
+    max-width: 292px;
+    height: 100%;
+
+    margin: 0 auto;
+}
 .works--image
 {
   width: 100%;
@@ -219,4 +225,21 @@
   height: 100%;
   object-fit: cover;
   
+}
+
+@media #{$bootstrap-xs}{
+  .works--filter{
+    display: block;
+    text-align: right;
+
+  }
+  .works--filter:last-child .works--button::after
+  {
+    display: inline-block;
+  }
+  .works--button
+  {
+    display: inline-block;
+    margin: 7px 0;
+  }
 }

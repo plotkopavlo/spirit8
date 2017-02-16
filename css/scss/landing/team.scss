@@ -58,12 +58,17 @@
 
 .team--person{
 
-	max-width: 293px;
+	padding: 0;
 	font-family: $open-sans-reg;
 	font-weight: 400;
 	color: $white-color;
 
 
+}
+.team--container{
+	max-width: 293px;
+	margin: 0 auto;
+	padding: 0 15px;
 }
 
 .team--foto{
