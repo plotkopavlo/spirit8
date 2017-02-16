@@ -47,26 +47,21 @@
 	width: 50px;
 	padding: 0;
 	margin: 0 auto;
-	&:hover .start--button-container,
-	&:focus .start--button-container{
+	border-radius: 50%;
+	border: 2px solid #ffffff;
+	&:hover ,
+	&:focus{
 		border-color: $orange-color ;
 	}
 
 }
-
-.start--button-container{
-	position: relative;
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	border: 2px solid #ffffff;
-
-}
-
 .start--icon{
 	position: absolute;
 	left: calc(50% - 5.5px);
 	top: calc(50% - 6px);
+
+	display: block;
+	
 	width: 11px;
 	height: 12px;
 
@@ -74,8 +69,6 @@
 }
 
 .start--img{
-	width: 100%;
-	height: 100%;
   object-fit: cover;
 }
 
