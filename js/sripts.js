@@ -63,5 +63,42 @@ $(document).ready(function(){
   slidesToShow: 1,
   slidesToScroll: 1,
 });
+ WorksItem= document.getElementsByClassName("works--item");
+function hiddenAllWorksItem()
+{
+  for(let i=0; i< WorksItem.length; i++)
+  {
+    WorksItem[i].hidden=true;
+  }
+}
+
+function visibleWorksItem (filter) {
+  FilterItem= document.getElementsByClassName("works--" + filter)
+  for(let i=0; i<FilterItem.length; i++)
+  {
+    FilterItem[i].hidden=false;
+  }
+
+}
+
+
+WorksButton= document.getElementsByClassName("works--button");
+for(let i=0; i<WorksButton.length; i++)
+{
+  WorksButton[i].onclick=function (){
+    console.log(this);
+    for(let i=0; i<WorksButton.length; i++)
+    {
+      WorksButton[i].classList.remove("works--button--active");
+    }
+    this.classList.add("works--button--active");
+
+    hiddenAllWorksItem();
+    visibleWorksItem(this.getAttribute('data-filter') )
+  }
+}
+
+
 
 });
+
